@@ -68,5 +68,17 @@ public class UserEndTests extends Base {
 		log.info("********** User Deleted Successfully **********");
 		
 	}
+	
+	public void patchUserTest() {
+		log.info("********** Patching User Info **********");
+		// creating payload using UsersPayLoad class
+		UsersPayLoad payLoad = new UsersPayLoad("Pawan Patil","pawanpatil@gmail.com","Male","active");
+		// calling patch user method from UserEndPoints class
+		Response response = UserEndPoints.patchUser(1, payLoad);
+		//validating response
+		Assert.assertEquals(response.getStatusCode(), 200);
+		response.prettyPrint();
+		log.info("********** User Info Patched Successfully **********");
+	}
 
 }
