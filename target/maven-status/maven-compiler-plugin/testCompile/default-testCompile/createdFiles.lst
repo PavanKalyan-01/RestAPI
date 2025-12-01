@@ -1,0 +1,10 @@
+com\api\payload\UsersPayLoad.class
+com\api\reports\ExtentLogger.class
+com\api\logs\LoggerManager.class
+com\api\reports\ExtentManager.class
+com\api\base\ConfigReader.class
+com\api\reports\ExtentTestManager.class
+com\api\endpoints\UserEndPoints.class
+com\api\tests\UserEndTests.class
+com\api\base\Base.class
+com\api\base\TestListener.class
